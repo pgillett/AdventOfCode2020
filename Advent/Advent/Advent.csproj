@@ -5,4 +5,25 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="InputData\**" />
+    <Compile Update="InputData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InputData.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="InputData\**" />
+    <EmbeddedResource Update="InputData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InputData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="InputData\**" />
+  </ItemGroup>
+
 </Project>
