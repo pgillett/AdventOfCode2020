@@ -9,10 +9,10 @@ namespace Advent
             {
                 var day1 = new Day1();
                 WriteDay(1);
-                var results2 = day1.FindExpenseTwo(InputData.Day1Expenses);
-                Console.WriteLine($"Two values: {results2.Item1 * results2.Item2}");
-                var results3 = day1.FindExpenseThree(InputData.Day1Expenses);
-                Console.WriteLine($"Three values: {results3.Item1 * results3.Item2 * results3.Item3}");
+                var results2 = day1.ExpenseTwoResult(InputData.Day1Expenses);
+                Console.WriteLine($"Two values: {results2}");
+                var results3 = day1.ExpenseThreeResult(InputData.Day1Expenses);
+                Console.WriteLine($"Three values: {results3}");
             }
 
             {

@@ -13,9 +13,7 @@ namespace AdventTest
             var expectedResult = 514579;
 
             var day1 = new Day1();
-            var results = day1.FindExpenseTwo(_input);
-
-            var actualResult = results.Item1 * results.Item2;
+            var actualResult = day1.ExpenseTwoResult(_input);
 
             actualResult.Should().Be(expectedResult);
         }
@@ -26,9 +24,7 @@ namespace AdventTest
             var expectedResult = 241861950;
 
             var day1 = new Day1();
-            var results = day1.FindExpenseThree(_input);
-
-            var actualResult = results.Item1 * results.Item2 * results.Item3;
+            var actualResult = day1.ExpenseThreeResult(_input);
 
             actualResult.Should().Be(expectedResult);
         }

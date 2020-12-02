@@ -5,6 +5,18 @@ namespace Advent
 {
     public class Day1
     {
+        public int ExpenseTwoResult(string allExpenses)
+        {
+            var results = FindExpenseTwo(allExpenses);
+            return results.Item1 * results.Item2;
+        }
+
+        public int ExpenseThreeResult(string allExpenses)
+        {
+            var results = FindExpenseThree(allExpenses);
+            return results.Item1 * results.Item2 * results.Item3;
+        }
+
         public (int, int) FindExpenseTwo(string allExpenses)
         {
             var expenses = allExpenses
