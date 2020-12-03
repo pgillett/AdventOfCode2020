@@ -23,6 +23,15 @@ namespace Advent
                 var resultsPosition = day2.CountCorrectPasswordsPosition(InputData.Day2Passwords);
                 Console.WriteLine($"By position: {resultsPosition}");
             }
+
+            {
+                var day3 = new Day3();
+                WriteDay(3);
+                var resultsRight3Down1 = day3.CountRight3Down1(InputData.Day3Trees);
+                Console.WriteLine($"Right 3 down 1: {resultsRight3Down1}");
+                var resultsMultiples = day3.CountMultiples(InputData.Day3Trees);
+                Console.WriteLine($"Multiple paths: {resultsMultiples}");
+            }
         }
 
         static void WriteDay(int day)
