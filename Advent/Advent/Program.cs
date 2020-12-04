@@ -32,6 +32,15 @@ namespace Advent
                 var resultsMultiples = day3.CountMultiples(InputData.Day3Trees);
                 Console.WriteLine($"Multiple paths: {resultsMultiples}");
             }
+
+            {
+                var day4 = new Day4();
+                WriteDay(4);
+                var numberOfBasicPassports = day4.CountBasicValidPassports(InputData.Day4Passport);
+                Console.WriteLine($"Basic valid passports: {numberOfBasicPassports}");
+                var numberOfFullyValidatedPassports = day4.CountFullyValidatedPassports(InputData.Day4Passport);
+                Console.WriteLine($"Fully validated: {numberOfFullyValidatedPassports}");
+            }
         }
 
         static void WriteDay(int day)
