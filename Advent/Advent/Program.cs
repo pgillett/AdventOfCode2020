@@ -41,6 +41,15 @@ namespace Advent
                 var numberOfFullyValidatedPassports = day4.CountFullyValidatedPassports(InputData.Day4Passport);
                 Console.WriteLine($"Fully validated: {numberOfFullyValidatedPassports}");
             }
+
+            {
+                var day5 = new Day5();
+                WriteDay(5);
+                var highestSeatId = day5.HighestSeatId(InputData.Day5Boarding);
+                Console.WriteLine($"Highest seat ID {highestSeatId}");
+                var findSeatId = day5.FindSeatId(InputData.Day5Boarding);
+                Console.WriteLine($"My seat ID: {findSeatId}");
+            }
         }
 
         static void WriteDay(int day)

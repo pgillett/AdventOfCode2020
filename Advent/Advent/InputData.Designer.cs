@@ -246,5 +246,56 @@ namespace Advent {
                 return ResourceManager.GetString("Day4Passport", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BBFFFFBRLL
+        ///BFBBBBFLLL
+        ///FBBBFBFLLR
+        ///BFBBBFBLRR
+        ///FBBFFBFLRR
+        ///FFBFFBFRRR
+        ///FBFBBBBLLL
+        ///BFFBFFFRLR
+        ///BFFBFFFRLL
+        ///BFBBFBFRRL
+        ///FBFFFFBLRR
+        ///BBFFBFBLLR
+        ///BBFBFFBRLR
+        ///BFBFBFFRLR
+        ///FBFFBFBRRL
+        ///BFFFFBFRLR
+        ///FFBBBBBRLR
+        ///BFFFBFBLLR
+        ///FBBBBBBRLL
+        ///FBBFBFBRRL
+        ///FBFBFBFLRL
+        ///FFBFBBFRLL
+        ///BFBFFBFRRL
+        ///FBBBBFBLLR
+        ///FFBBFBFLRR
+        ///BFBFBBFRRL
+        ///FBFFFBBLLR
+        ///FBBFFBFRRR
+        ///FFFBFBBLRL
+        ///FBBBBFBRRL
+        ///BFBFBBFLRL
+        ///BBFFBFBLRL
+        ///BBFFFFFLRL
+        ///BBFBBFFRLR
+        ///FFBFBBBRRL
+        ///FBFFFFFRLR
+        ///FFFBBFFLRR
+        ///BFFFBFFLRL
+        ///BFBFFFBRLR
+        ///BBFBFBFLRR
+        ///FBBBBFFRRR
+        ///FBFFFBFRLL
+        ///FBFFFFFL [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day5Boarding {
+            get {
+                return ResourceManager.GetString("Day5Boarding", resourceCulture);
+            }
+        }
     }
 }
