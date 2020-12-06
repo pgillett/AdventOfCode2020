@@ -50,6 +50,15 @@ namespace Advent
                 var findSeatId = day5.FindSeatId(InputData.Day5Boarding);
                 Console.WriteLine($"My seat ID: {findSeatId}");
             }
+
+            {
+                var day6=new Day6();
+                WriteDay(6);
+                var countQuestions = day6.CountGroupQuestions(InputData.Day6Customs);
+                Console.WriteLine($"Number of questions: {countQuestions}");
+                var countMatchQuestions = day6.CountMatchingInGroupQuestions(InputData.Day6Customs);
+                Console.WriteLine($"Matching questions in group: {countMatchQuestions}");
+            }
         }
 
         static void WriteDay(int day)
