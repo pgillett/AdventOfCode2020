@@ -299,11 +299,77 @@ namespace Advent {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to zvxc
+        ///dv
+        ///vh
+        ///xv
+        ///jvem
+        ///
+        ///mxfhdeyikljnz
+        ///vwzbjmsrgq
+        ///
+        ///vbtjnh
+        ///vhejnbti
+        ///vthnjb
+        ///tsbhjnv
+        ///
+        ///cbjemdvp
+        ///jdvuylp
+        ///ofpjaqgsrxvdn
+        ///dzvpbj
+        ///vbktpdj
+        ///
+        ///knyvdhsemu
+        ///sdyumkgvh
+        ///muyvdskh
+        ///syhkuvmd
+        ///dvmykshu
+        ///
+        ///rmantzovbsuxiljkchfgdqew
+        ///vficzosgwlmrdtqkueajbnxh
+        ///davqlntibxhojesrkugpzmwfc
+        ///
+        ///ifdmgrcve
+        ///bkqal
+        ///gxcwvt
+        ///
+        ///xeiokblasch
+        ///toxjlsbnciha
+        ///sovycihlabx
+        ///ximhylocabs
+        ///hixsolabc
+        ///
+        ///iyfkvmpolta
+        ///thpqodzifxc
+        ///
+        ///iexunoyhwv
+        ///ovweiyuhxn
+        ///uhojnvyxeiw
+        ///
+        ///vbncamhzojtqrlpse
+        ///wujapcidzx
+        ///zxjiuacwkgfdp
+        ///
+        ///bygewhzsnqvxaoc
+        ///sngqv [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Day6Customs {
             get {
                 return ResourceManager.GetString("Day6Customs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to clear maroon bags contain 1 dull lavender bag.
+        ///wavy turquoise bags contain 4 vibrant magenta bags, 4 light violet bags, 5 bright gold bags, 2 faded black bags.
+        ///wavy beige bags contain 3 plaid magenta bags, 3 wavy lime bags, 2 clear turquoise bags, 3 muted cyan bags.
+        ///mirrored black bags contain 1 plaid red bag, 3 light gold bags, 3 wavy violet bags.
+        ///vibrant fuchsia bags contain 2 dark lime bags, 2 mirrored black bags, 2 light magenta bags, 2 drab chartreuse bags.
+        ///vibrant plum bags contain 4 dim cyan bag [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day7Haversacks {
+            get {
+                return ResourceManager.GetString("Day7Haversacks", resourceCulture);
             }
         }
     }

@@ -59,6 +59,16 @@ namespace Advent
                 var countMatchQuestions = day6.CountMatchingInGroupQuestions(InputData.Day6Customs);
                 Console.WriteLine($"Matching questions in group: {countMatchQuestions}");
             }
+
+            {
+                var day7 = new Day7();
+                WriteDay(7);
+                var outerBags = day7.CountOuterBagsForShinyGold(InputData.Day7Haversacks);
+                Console.WriteLine($"Number of bags: {outerBags}");
+                var totalBags = day7.TotalNumberOfBags(InputData.Day7Haversacks);
+                Console.WriteLine($"Total bags: {totalBags}");
+            }
+
         }
 
         static void WriteDay(int day)
