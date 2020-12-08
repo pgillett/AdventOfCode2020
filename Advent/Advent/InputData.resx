@@ -139,4 +139,7 @@
   <data name="Day7Haversacks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>datafiles\day7haversacks.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="Day8Handheld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day8handheld.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

@@ -372,5 +372,70 @@ namespace Advent {
                 return ResourceManager.GetString("Day7Haversacks", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to acc +28
+        ///jmp +481
+        ///nop +87
+        ///acc -10
+        ///acc +21
+        ///jmp +548
+        ///jmp +250
+        ///acc -9
+        ///acc +19
+        ///acc -3
+        ///nop +85
+        ///jmp +84
+        ///acc +43
+        ///acc +34
+        ///acc -5
+        ///jmp +602
+        ///nop +416
+        ///acc +19
+        ///acc +46
+        ///acc +33
+        ///jmp +133
+        ///acc -3
+        ///acc +5
+        ///jmp +143
+        ///nop -18
+        ///acc +50
+        ///acc +0
+        ///acc -6
+        ///jmp +243
+        ///acc +11
+        ///acc -18
+        ///jmp +501
+        ///acc +45
+        ///jmp +449
+        ///acc +0
+        ///acc -10
+        ///acc +20
+        ///nop +516
+        ///jmp +544
+        ///jmp +551
+        ///nop +59
+        ///nop +247
+        ///acc -1
+        ///jmp +589
+        ///acc +41
+        ///jmp +457
+        ///jmp +102
+        ///acc +22
+        ///jmp +195
+        ///acc +30
+        ///jmp -38
+        ///acc +21
+        ///nop -3
+        ///jmp +466
+        ///acc +47
+        ///acc +4
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day8Handheld {
+            get {
+                return ResourceManager.GetString("Day8Handheld", resourceCulture);
+            }
+        }
     }
 }

@@ -69,6 +69,15 @@ namespace Advent
                 Console.WriteLine($"Total bags: {totalBags}");
             }
 
+            {
+                var day8 = new Day8();
+                WriteDay(8);
+                var accumulatorAtCrash = day8.AccumulateAtCrash(InputData.Day8Handheld);
+                Console.WriteLine($"Accumulator at crash: {accumulatorAtCrash}");
+                var accumulatorWithFix = day8.FixAndAccumulator(InputData.Day8Handheld);
+                Console.WriteLine($"Accumulator with fix: {accumulatorWithFix}");
+            }
+
         }
 
         static void WriteDay(int day)
