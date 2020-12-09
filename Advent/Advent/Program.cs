@@ -78,6 +78,15 @@ namespace Advent
                 Console.WriteLine($"Accumulator with fix: {accumulatorWithFix}");
             }
 
+            {
+                var day9 = new Day9();
+                WriteDay(9);
+                var failingNumber = day9.FailingNumber(InputData.Day9Encoding, 25);
+                Console.WriteLine($"Failing number: {failingNumber}");
+                var totalOfRun = day9.TotalOfRun(InputData.Day9Encoding, failingNumber);
+                Console.WriteLine($"Total of run: {totalOfRun}");
+            }
+
         }
 
         static void WriteDay(int day)
