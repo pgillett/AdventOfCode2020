@@ -87,6 +87,15 @@ namespace Advent
                 Console.WriteLine($"Total of run: {totalOfRun}");
             }
 
+            {
+                var day10 = new Day10();
+                WriteDay(10);
+                var joltProduct = day10.JoltProduct(InputData.Day10Adapter);
+                Console.WriteLine($"Jolt product: {joltProduct}");
+                var combinations = day10.Combinations(InputData.Day10Adapter);
+                Console.WriteLine($"Combinations: {combinations}");
+            }
+
         }
 
         static void WriteDay(int day)
