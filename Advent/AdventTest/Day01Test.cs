@@ -7,13 +7,20 @@ namespace AdventTest
     [TestClass]
     public class Day01Test
     {
+        private Day01 _day01;
+
+        [TestInitialize]
+        public void Setup()
+        {
+            _day01 = new Day01();
+        }
+
         [TestMethod]
         public void TwoNumbersShouldAddAndReturnCorrectResult()
         {
             var expectedResult = 514579;
 
-            var day1 = new Day01();
-            var actualResult = day1.ExpenseTwoResult(_input);
+            var actualResult = _day01.ExpenseTwoResult(_input);
 
             actualResult.Should().Be(expectedResult);
         }
@@ -23,8 +30,7 @@ namespace AdventTest
         {
             var expectedResult = 241861950;
 
-            var day1 = new Day01();
-            var actualResult = day1.ExpenseThreeResult(_input);
+            var actualResult = _day01.ExpenseThreeResult(_input);
 
             actualResult.Should().Be(expectedResult);
         }
