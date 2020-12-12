@@ -55,8 +55,8 @@ namespace AdventTest
             actual.Should().Be(expected);
         }
 
-        private string _convertTestInput = @"Hello 
-there 
+        private string _convertTestInput = @"Hello
+there
 
 world";
 
