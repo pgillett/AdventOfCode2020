@@ -12,7 +12,7 @@ namespace Advent
             return FindAccumulator(code).Accumulator;
         }
 
-        private Registers FindAccumulator(CodeLine[] code)
+        private Registers FindAccumulator(CodeLine[] code, int swapLine = -1)
         {
             var reg = new Registers();
             var seen = new bool[code.Length];
@@ -20,7 +20,7 @@ namespace Advent
             {
                 if (seen[reg.ProgramCounter]) return reg.StuckInLoop();
                 seen[reg.ProgramCounter] = true;
-                reg = code[reg.ProgramCounter].Process(reg);
+                reg = code[reg.ProgramCounter].Process(reg, reg.ProgramCounter == swapLine);
             }
 
             return reg;
@@ -30,15 +30,10 @@ namespace Advent
         {
             var code = DecodeFile(input);
 
-            for (int changeLine = 0; changeLine < code.Length; changeLine++)
-            {
-                code[changeLine].SwapNopJmp();
-                var result = FindAccumulator(code);
-                code[changeLine].SwapNopJmp();
-                if (!result.InLoop) return result.Accumulator;
-            }
-
-            return 0;
+            return code.Select((_, changeLine) => FindAccumulator(code, changeLine))
+                    .Where(result => !result.InLoop)
+                    .Select(result => result.Accumulator)
+                .FirstOrDefault();
         }
 
         private CodeLine[] DecodeFile(string input) => input
@@ -48,34 +43,26 @@ namespace Advent
 
         public struct CodeLine
         {
-            private string _opcode;
-            private int _operand;
+            private readonly string _opcode;
+            private readonly int _operand;
 
             public CodeLine(string code)
             {
                 var instruction = code.Split(' ');
                 _opcode = instruction[0];
-                _operand = (instruction[1][0] == '+' ? 1 : -1) * int.Parse(instruction[1].Substring(1));
+                _operand = int.Parse(instruction[1]);
             }
 
-            public CodeLine(string opcode, int operand)
-            {
-                _opcode = opcode;
-                _operand = operand;
-            }
-
-            public void SwapNopJmp()
-            {
-                _opcode = _opcode switch
+            private string SwapNopJmp(string opcode) =>
+                opcode switch
                 {
                     "nop" => "jmp",
                     "jmp" => "nop",
-                    _ => _opcode
+                    _ => opcode
                 };
-            }
 
-            public Registers Process(Registers registers) =>
-                _opcode switch
+            public Registers Process(Registers registers, bool swapLine) =>
+                (swapLine ? SwapNopJmp(_opcode) : _opcode) switch
                 {
                     "jmp" => registers.AddPC(_operand),
                     "acc" => registers.AddAccumulator(_operand).AddPC(1),
