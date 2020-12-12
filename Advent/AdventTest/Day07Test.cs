@@ -5,14 +5,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventTest
 {
     [TestClass]
-    public class Day7Test
+    public class Day07Test
     {
-        private Day7 _day7;
+        private Day07 _day07;
 
         [TestInitialize]
         public void Setup()
         {
-            _day7 = new Day7();
+            _day07 = new Day07();
         }
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace AdventTest
         {
             var expected = 4;
 
-            var actual = _day7.CountOuterBagsForShinyGold(_input1);
+            var actual = _day07.CountOuterBagsForShinyGold(_input1);
 
             actual.Should().Be(expected);
         }
@@ -30,7 +30,7 @@ namespace AdventTest
         {
             var expected = 126;
 
-            var actual = _day7.TotalNumberOfBags(_input2);
+            var actual = _day07.TotalNumberOfBags(_input2);
 
             actual.Should().Be(expected);
         }

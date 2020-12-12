@@ -5,14 +5,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventTest
 {
     [TestClass]
-    public class Day5Test
+    public class Day05Test
     {
-        private Day5 _day5;
+        private Day05 _day05;
 
         [TestInitialize]
         public void Setup()
         {
-            _day5 = new Day5();
+            _day05 = new Day05();
         }
 
         [TestMethod]
@@ -21,7 +21,7 @@ namespace AdventTest
         [DataRow("BBFFBBFRLL", 102, 4, 820)]
         public void DecodeReturnsCorrectRowColumnId(string board, int expectedRow, int expectedCol, int expectedId)
         {
-            var result = _day5.Decode(board);
+            var result = _day05.Decode(board);
 
             var actualRow = result.row;
             var actualCol = result.column;
@@ -37,7 +37,7 @@ namespace AdventTest
         {
             var expectedId = 820;
 
-            var actualId = _day5.HighestSeatId(_input);
+            var actualId = _day05.HighestSeatId(_input);
 
             actualId.Should().Be(expectedId);
         }

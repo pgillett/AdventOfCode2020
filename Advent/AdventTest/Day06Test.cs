@@ -5,14 +5,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventTest
 {
     [TestClass]
-    public class Day6Test
+    public class Day06Test
     {
-        private Day6 _day6;
+        private Day06 _day06;
 
         [TestInitialize]
         public void Setup()
         {
-            _day6 = new Day6();
+            _day06 = new Day06();
         }
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace AdventTest
         {
             var expected = 11;
 
-            var actual = _day6.CountGroupQuestions(_input);
+            var actual = _day06.CountGroupQuestions(_input);
 
             actual.Should().Be(expected);
         }
@@ -30,7 +30,7 @@ namespace AdventTest
         {
             var expected = 6;
 
-            var actual = _day6.CountMatchingInGroupQuestions(_input);
+            var actual = _day06.CountMatchingInGroupQuestions(_input);
 
             actual.Should().Be(expected);
         }

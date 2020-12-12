@@ -6,14 +6,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventTest
 {
 [TestClass]
-    public class Day3Test
+    public class Day03Test
     {
-        private Day3 _day3;
+        private Day03 _day03;
 
         [TestInitialize]
         public void Setup()
         {
-            _day3 = new Day3();
+            _day03 = new Day03();
         }
 
         [TestMethod]
@@ -21,7 +21,7 @@ namespace AdventTest
         {
             var expected = 7;
 
-            var actual = _day3.CountRight3Down1(_input);
+            var actual = _day03.CountRight3Down1(_input);
 
             actual.Should().Be(expected);
         }
@@ -31,7 +31,7 @@ namespace AdventTest
         {
             var expected = 336;
 
-            var actual = _day3.CountMultiples(_input);
+            var actual = _day03.CountMultiples(_input);
 
             actual.Should().Be(expected);
         }
@@ -44,7 +44,7 @@ namespace AdventTest
         [DataRow(1, 12, false)]
         public void IsTreeAtReturnsCorrectValue(int row, int col, bool expected)
         {
-            var actual = _day3.IsTreeAt(_input.Split(Environment.NewLine), row, col);
+            var actual = _day03.IsTreeAt(_input.Split(Environment.NewLine), row, col);
 
             actual.Should().Be(expected);
         }

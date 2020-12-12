@@ -5,14 +5,14 @@ using FluentAssertions;
 namespace AdventTest
 {
     [TestClass]
-    public class Day9Test
+    public class Day09Test
     {
-        private Day9 _day9;
+        private Day09 _day09;
 
         [TestInitialize]
         public void Setup()
         {
-            _day9=new Day9();
+            _day09=new Day09();
         }
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace AdventTest
         {
             var expected = 127;
 
-            var actual = _day9.FailingNumber(_input, 5);
+            var actual = _day09.FailingNumber(_input, 5);
 
             actual.Should().Be(expected);
         }
@@ -30,7 +30,7 @@ namespace AdventTest
         {
             var expected = 62;
 
-            var actual = _day9.TotalOfRun(_input, 127);
+            var actual = _day09.TotalOfRun(_input, 127);
 
             actual.Should().Be(expected);
         }

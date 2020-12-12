@@ -7,83 +7,83 @@ namespace Advent
         static void Main(string[] args)
         {
             {
-                var day1 = new Day1();
+                var day1 = new Day01();
                 WriteDay(1);
-                var results2 = day1.ExpenseTwoResult(InputData.Day1Expenses);
+                var results2 = day1.ExpenseTwoResult(InputData.Day01Expenses);
                 Console.WriteLine($"Two values: {results2}");
-                var results3 = day1.ExpenseThreeResult(InputData.Day1Expenses);
+                var results3 = day1.ExpenseThreeResult(InputData.Day01Expenses);
                 Console.WriteLine($"Three values: {results3}");
             }
 
             {
-                var day2 = new Day2();
+                var day2 = new Day02();
                 WriteDay(2);
-                var resultsNumber = day2.CountCorrectPasswordsNumber(InputData.Day2Passwords);
+                var resultsNumber = day2.CountCorrectPasswordsNumber(InputData.Day02Passwords);
                 Console.WriteLine($"By number: {resultsNumber}");
-                var resultsPosition = day2.CountCorrectPasswordsPosition(InputData.Day2Passwords);
+                var resultsPosition = day2.CountCorrectPasswordsPosition(InputData.Day02Passwords);
                 Console.WriteLine($"By position: {resultsPosition}");
             }
 
             {
-                var day3 = new Day3();
+                var day3 = new Day03();
                 WriteDay(3);
-                var resultsRight3Down1 = day3.CountRight3Down1(InputData.Day3Trees);
+                var resultsRight3Down1 = day3.CountRight3Down1(InputData.Day03Trees);
                 Console.WriteLine($"Right 3 down 1: {resultsRight3Down1}");
-                var resultsMultiples = day3.CountMultiples(InputData.Day3Trees);
+                var resultsMultiples = day3.CountMultiples(InputData.Day03Trees);
                 Console.WriteLine($"Multiple paths: {resultsMultiples}");
             }
 
             {
-                var day4 = new Day4();
+                var day4 = new Day04();
                 WriteDay(4);
-                var numberOfBasicPassports = day4.CountBasicValidPassports(InputData.Day4Passport);
+                var numberOfBasicPassports = day4.CountBasicValidPassports(InputData.Day04Passport);
                 Console.WriteLine($"Basic valid passports: {numberOfBasicPassports}");
-                var numberOfFullyValidatedPassports = day4.CountFullyValidatedPassports(InputData.Day4Passport);
+                var numberOfFullyValidatedPassports = day4.CountFullyValidatedPassports(InputData.Day04Passport);
                 Console.WriteLine($"Fully validated: {numberOfFullyValidatedPassports}");
             }
 
             {
-                var day5 = new Day5();
+                var day5 = new Day05();
                 WriteDay(5);
-                var highestSeatId = day5.HighestSeatId(InputData.Day5Boarding);
+                var highestSeatId = day5.HighestSeatId(InputData.Day05Boarding);
                 Console.WriteLine($"Highest seat ID {highestSeatId}");
-                var findSeatId = day5.FindSeatId(InputData.Day5Boarding);
+                var findSeatId = day5.FindSeatId(InputData.Day05Boarding);
                 Console.WriteLine($"My seat ID: {findSeatId}");
             }
 
             {
-                var day6=new Day6();
+                var day6=new Day06();
                 WriteDay(6);
-                var countQuestions = day6.CountGroupQuestions(InputData.Day6Customs);
+                var countQuestions = day6.CountGroupQuestions(InputData.Day06Customs);
                 Console.WriteLine($"Number of questions: {countQuestions}");
-                var countMatchQuestions = day6.CountMatchingInGroupQuestions(InputData.Day6Customs);
+                var countMatchQuestions = day6.CountMatchingInGroupQuestions(InputData.Day06Customs);
                 Console.WriteLine($"Matching questions in group: {countMatchQuestions}");
             }
 
             {
-                var day7 = new Day7();
+                var day7 = new Day07();
                 WriteDay(7);
-                var outerBags = day7.CountOuterBagsForShinyGold(InputData.Day7Haversacks);
+                var outerBags = day7.CountOuterBagsForShinyGold(InputData.Day07Haversacks);
                 Console.WriteLine($"Number of bags: {outerBags}");
-                var totalBags = day7.TotalNumberOfBags(InputData.Day7Haversacks);
+                var totalBags = day7.TotalNumberOfBags(InputData.Day07Haversacks);
                 Console.WriteLine($"Total bags: {totalBags}");
             }
 
             {
-                var day8 = new Day8();
+                var day8 = new Day08();
                 WriteDay(8);
-                var accumulatorAtCrash = day8.AccumulateAtCrash(InputData.Day8Handheld);
+                var accumulatorAtCrash = day8.AccumulateAtCrash(InputData.Day08Handheld);
                 Console.WriteLine($"Accumulator at crash: {accumulatorAtCrash}");
-                var accumulatorWithFix = day8.FixAndAccumulator(InputData.Day8Handheld);
+                var accumulatorWithFix = day8.FixAndAccumulator(InputData.Day08Handheld);
                 Console.WriteLine($"Accumulator with fix: {accumulatorWithFix}");
             }
 
             {
-                var day9 = new Day9();
+                var day9 = new Day09();
                 WriteDay(9);
-                var failingNumber = day9.FailingNumber(InputData.Day9Encoding, 25);
+                var failingNumber = day9.FailingNumber(InputData.Day09Encoding, 25);
                 Console.WriteLine($"Failing number: {failingNumber}");
-                var totalOfRun = day9.TotalOfRun(InputData.Day9Encoding, failingNumber);
+                var totalOfRun = day9.TotalOfRun(InputData.Day09Encoding, failingNumber);
                 Console.WriteLine($"Total of run: {totalOfRun}");
             }
 

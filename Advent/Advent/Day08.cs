@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Advent
 {
-    public class Day8
+    public class Day08
     {
         public int AccumulateAtCrash(string input)
         {

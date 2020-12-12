@@ -118,6 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Day01Expenses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day01expenses.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Day02Passwords" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day02passwords.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Day03Trees" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day03trees.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Day04Passport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day04passport.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Day05Boarding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day05boarding.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Day06Customs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day06customs.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Day07Haversacks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day07haversacks.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Day08Handheld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day08handheld.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Day09Encoding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day09encoding.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="Day10Adapter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>datafiles\day10adapter.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
@@ -126,32 +153,5 @@
   </data>
   <data name="Day12Rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>datafiles\day12rain.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Day1Expenses" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day1expenses.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Day2Passwords" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day2passwords.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Day3Trees" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day3trees.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Day4Passport" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day4passport.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Day5Boarding" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day5boarding.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Day6Customs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day6customs.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Day7Haversacks" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day7haversacks.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Day8Handheld" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day8handheld.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Day9Encoding" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>datafiles\day9encoding.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

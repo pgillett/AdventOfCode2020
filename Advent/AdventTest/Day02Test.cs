@@ -5,14 +5,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventTest
 {
     [TestClass]
-    public class Day2Test
+    public class Day02Test
     {
-        private Day2 _day2;
+        private Day02 _day02;
 
         [TestInitialize]
         public void Setup()
         {
-            _day2 = new Day2();
+            _day02 = new Day02();
         }
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace AdventTest
         {
             var expectedNumber = 2;
 
-            var actualNumber = _day2.CountCorrectPasswordsNumber(_input);
+            var actualNumber = _day02.CountCorrectPasswordsNumber(_input);
 
             actualNumber.Should().Be(expectedNumber);
         }
@@ -30,7 +30,7 @@ namespace AdventTest
         {
             var expectedNumber = 1;
 
-            var actualNumber = _day2.CountCorrectPasswordsPosition(_input);
+            var actualNumber = _day02.CountCorrectPasswordsPosition(_input);
 
             actualNumber.Should().Be(expectedNumber);
         }
@@ -41,7 +41,7 @@ namespace AdventTest
         [DataRow("2-9 c: ccccccccc", true)]
         public void IsValidNumberShouldCheckNumberOfCharacters(string passwordSet, bool expected)
         {
-            var actual = _day2.IsValidNumber(passwordSet);
+            var actual = _day02.IsValidNumber(passwordSet);
 
             actual.Should().Be(expected);
         }
@@ -52,7 +52,7 @@ namespace AdventTest
         [DataRow("2-9 c: ccccccccc", false)]
         public void IsValidPositionShouldCheckNumberOfCharacters(string passwordSet, bool expected)
         {
-            var actual = _day2.IsValidPosition(passwordSet);
+            var actual = _day02.IsValidPosition(passwordSet);
 
             actual.Should().Be(expected);
         }
@@ -65,7 +65,7 @@ namespace AdventTest
             var expectedCharacter = 'a';
             var expectedPassword = "bcd";
 
-            _day2.SplitPassword("1-2 a: bcd",
+            _day02.SplitPassword("1-2 a: bcd",
                 out var actualValue1, out var actualValue2,
                 out var actualCharacter, out var actualPassword);
 

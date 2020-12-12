@@ -5,14 +5,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventTest
 {
     [TestClass]
-    public class Day4Test
+    public class Day04Test
     {
-        private Day4 _day4;
+        private Day04 _day04;
         
         [TestInitialize]
         public void Setup()
         {
-            _day4=new Day4();
+            _day04=new Day04();
         }
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace AdventTest
         {
             var expected = new[] {"Hello there", "world"};
 
-            var actual = _day4.FileToPassports(_convertTestInput);
+            var actual = _day04.FileToPassports(_convertTestInput);
 
             actual.Should().BeEquivalentTo(expected);
         }
@@ -30,7 +30,7 @@ namespace AdventTest
         {
             var expected = 2;
 
-            var actual = _day4.CountBasicValidPassports(_basicInput);
+            var actual = _day04.CountBasicValidPassports(_basicInput);
 
             actual.Should().Be(expected);
         }
@@ -40,7 +40,7 @@ namespace AdventTest
         {
             var expected = 0;
 
-            var actual = _day4.CountFullyValidatedPassports(_invalidInput);
+            var actual = _day04.CountFullyValidatedPassports(_invalidInput);
 
             actual.Should().Be(expected);
         }
@@ -50,7 +50,7 @@ namespace AdventTest
         {
             var expected = 4;
 
-            var actual = _day4.CountFullyValidatedPassports(_validInput);
+            var actual = _day04.CountFullyValidatedPassports(_validInput);
 
             actual.Should().Be(expected);
         }

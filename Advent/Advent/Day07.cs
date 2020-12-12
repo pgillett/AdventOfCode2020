@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Advent
 {
-    public class Day7
+    public class Day07
     {
         public int CountOuterBagsForShinyGold(string input)
         {

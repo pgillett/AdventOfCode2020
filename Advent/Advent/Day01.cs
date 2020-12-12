@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Advent
 {
-    public class Day1
+    public class Day01
     {
         public int ExpenseTwoResult(string allExpenses)
         {

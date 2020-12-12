@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Advent
 {
-    public class Day5
+    public class Day05
     {
         public int FindSeatId(string input)
         {

@@ -5,14 +5,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventTest
 {
     [TestClass]
-    public class Day8Test
+    public class Day08Test
     {
-        private Day8 _day8;
+        private Day08 _day08;
 
         [TestInitialize]
         public void Setup()
         {
-            _day8 = new Day8();
+            _day08 = new Day08();
         }
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace AdventTest
         {
             var expected = 5;
 
-            var actual = _day8.AccumulateAtCrash(_input);
+            var actual = _day08.AccumulateAtCrash(_input);
 
             actual.Should().Be(expected);
         }
@@ -30,7 +30,7 @@ namespace AdventTest
         {
             var expected = 8;
 
-            var actual = _day8.FixAndAccumulator(_input);
+            var actual = _day08.FixAndAccumulator(_input);
 
             actual.Should().Be(expected);
         }

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Advent
 {
-    public class Day9
+    public class Day09
     {
         public long FailingNumber(string input, int preamble)
         {

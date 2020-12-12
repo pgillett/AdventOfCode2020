@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Advent
 {
-    public class Day4
+    public class Day04
     {
         public string[] FileToPassports(string file)
         {

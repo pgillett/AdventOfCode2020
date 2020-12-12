@@ -4,7 +4,7 @@ using System.Linq;
 namespace Advent
 {
     
-    public class Day3
+    public class Day03
     {
         public long CountMultiples(string input)
         {

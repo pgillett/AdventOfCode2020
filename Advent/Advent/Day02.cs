@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Advent
 {
-    public class Day2
+    public class Day02
     {
         public int CountCorrectPasswordsNumber(string passwordList)
         {
