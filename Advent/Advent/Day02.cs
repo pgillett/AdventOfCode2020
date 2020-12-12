@@ -9,14 +9,14 @@ namespace Advent
         {
             var passwordSets = passwordList.Split(Environment.NewLine);
 
-            return passwordSets.Count(p => IsValidNumber(p));
+            return passwordSets.Count(IsValidNumber);
         }
 
         public int CountCorrectPasswordsPosition(string passwordList)
         {
             var passwordSets = passwordList.Split(Environment.NewLine);
 
-            return passwordSets.Count(p => IsValidPosition(p));
+            return passwordSets.Count(IsValidPosition);
         }
 
         public bool IsValidNumber(string passwordSet)

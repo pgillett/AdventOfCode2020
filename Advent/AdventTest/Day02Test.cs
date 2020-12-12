@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace AdventTest
 {
     [TestClass]
-    public class Day02Test
+    public class Day2Test
     {
         private Day02 _day02;
 
