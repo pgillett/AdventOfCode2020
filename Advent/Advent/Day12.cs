@@ -89,7 +89,7 @@ namespace Advent
             private Ship MovedBy(int x, int y) => new Ship(Direction, X + x, Y + y);
 
             private Ship Rotated(int degrees) =>
-                new Ship((Direction) (((int) Direction + 4 + degrees / 90) % 4), X, Y);
+                new Ship((Direction) (((int) Direction + degrees / 90) % 4), X, Y);
 
             public Ship MoveTowards(Instruction instruction, Waypoint waypoint)
             {
@@ -123,24 +123,19 @@ namespace Advent
                     _ => this
                 };
 
-            private Waypoint Rotate(Instruction instruction)
-            {
-                ((int x, int y) x, (int x, int y) y) dp = instruction.Full switch
+            private Waypoint Rotate(Instruction instruction) =>
+                instruction.Full switch
                 {
-                    "R0" => ((1, 0), (0, 1)),
-                    "L0" => ((1, 0), (0, 1)),
-                    "R90" => ((0, 1), (-1, 0)),
-                    "L270" => ((0, 1), (-1, 0)),
-                    "L180" => ((-1, 0), (0, -1)),
-                    "R180" => ((-1, 0), (0, -1)),
-                    "R270" => ((0, -1), (1, 0)),
-                    "L90" => ((0, -1), (1, 0)),
-                    _ => ((0, 0), (0, 0))
+                    "R0" => this,
+                    "L0" => this,
+                    "R90" => new Waypoint(Y, -X),
+                    "L270" => new Waypoint(Y, -X),
+                    "L180" => new Waypoint(-X, -Y),
+                    "R180" => new Waypoint(-X, -Y),
+                    "R270" => new Waypoint(-Y, X),
+                    "L90" => new Waypoint(-Y,X),
+                    _ => this
                 };
-
-                return new Waypoint(X * dp.x.x + Y * dp.x.y, 
-                    X * dp.y.x + Y * dp.y.y);
-            }
         }
     }
 }
