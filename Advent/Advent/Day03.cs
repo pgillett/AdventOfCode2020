@@ -17,27 +17,21 @@ namespace Advent
             return Count(input, 3, 1);
         }
 
-        public int Count(string input, int right, int down)
+        private int Count(string input, int right, int down)
         {
             var lines = input.Split(Environment.NewLine);
 
             var count = 0;
-            var row = 0;
             var col = 0;
-            while (row < lines.Length - down)
+            for (var row = 0; row < lines.Length; row += down, col += right)
             {
-                col += right;
-                row += down;
                 if (IsTreeAt(lines, row, col)) count++;
             }
 
             return count;
         }
 
-        public bool IsTreeAt(string[] lines, int row, int col)
-        {
-            col %= lines[0].Length;
-            return lines[row][col] == '#';
-        }
+        public bool IsTreeAt(string[] lines, int row, int col) => 
+            lines[row][col % lines[0].Length] == '#';
     }
 }
