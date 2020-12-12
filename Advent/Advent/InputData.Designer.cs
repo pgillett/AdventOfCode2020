@@ -180,6 +180,129 @@ namespace Advent {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to N5
+        ///W1
+        ///F61
+        ///W2
+        ///R90
+        ///F50
+        ///N2
+        ///F40
+        ///E4
+        ///F48
+        ///R180
+        ///F17
+        ///W4
+        ///N5
+        ///F3
+        ///W3
+        ///F1
+        ///R90
+        ///S2
+        ///F23
+        ///L90
+        ///S3
+        ///W3
+        ///S4
+        ///E4
+        ///L90
+        ///W3
+        ///S3
+        ///E4
+        ///N2
+        ///F28
+        ///S2
+        ///W2
+        ///L180
+        ///E3
+        ///R90
+        ///E3
+        ///F83
+        ///W5
+        ///S4
+        ///W3
+        ///N2
+        ///W5
+        ///F90
+        ///N2
+        ///F82
+        ///N2
+        ///F2
+        ///S4
+        ///L90
+        ///N3
+        ///L90
+        ///S2
+        ///F12
+        ///S3
+        ///F40
+        ///L90
+        ///F56
+        ///N1
+        ///F29
+        ///W2
+        ///S2
+        ///R270
+        ///S4
+        ///F14
+        ///E4
+        ///R90
+        ///E2
+        ///S2
+        ///E2
+        ///F82
+        ///L90
+        ///N3
+        ///R180
+        ///R90
+        ///S1
+        ///W1
+        ///L90
+        ///S2
+        ///F78
+        ///W2
+        ///F52
+        ///N4
+        ///W5
+        ///F38
+        ///L90
+        ///W2
+        ///S2
+        ///L90
+        ///F66
+        ///R90
+        ///F62
+        ///E3
+        ///S5
+        ///L90
+        ///F99
+        ///F2
+        ///E4
+        ///R90
+        ///N3
+        ///W4
+        ///N1
+        ///F71
+        ///E2
+        ///N3
+        ///N2
+        ///R90
+        ///E2
+        ///F66
+        ///S4
+        ///R90
+        ///E5
+        ///F29
+        ///E5
+        ///L90        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day12Rain {
+            get {
+                return ResourceManager.GetString("Day12Rain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1782
         ///1344
         ///1974

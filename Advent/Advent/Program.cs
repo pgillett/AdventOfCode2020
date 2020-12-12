@@ -104,6 +104,15 @@ namespace Advent
                 var occupiedDistance = day11.SeatsAtEquilibriumFurther(InputData.Day11Seating);
                 Console.WriteLine($"Occupied distance: {occupiedDistance}");
             }
+
+            {
+                var day12= new Day12();
+                WriteDay(12);
+                var distance = day12.Manhattan(InputData.Day12Rain);
+                Console.WriteLine($"Distance: {distance}");
+                var distanceWayPoint = day12.ManhattanWaypoint(InputData.Day12Rain);
+                Console.WriteLine($"Distance waypoint: {distanceWayPoint}");
+            }
         }
 
         static void WriteDay(int day)
