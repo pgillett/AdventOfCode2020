@@ -96,6 +96,14 @@ namespace Advent
                 Console.WriteLine($"Combinations: {combinations}");
             }
 
+            {
+                var day11 = new Day11();
+                WriteDay(11);
+                var occupied = day11.SeatsAtEquilibriumNear(InputData.Day11Seating);
+                Console.WriteLine($"Occupied near: {occupied}");
+                var occupiedDistance = day11.SeatsAtEquilibriumFurther(InputData.Day11Seating);
+                Console.WriteLine($"Occupied distance: {occupiedDistance}");
+            }
         }
 
         static void WriteDay(int day)

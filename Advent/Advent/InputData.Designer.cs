@@ -166,6 +166,20 @@ namespace Advent {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLL.LLLLLLLLLLLLL.LLLLLLLL
+        ///LLLLLLLLLL.LLLL.LLLL.LLLLLLLLLLLLLL.LLLLLLL.LLLLLLL.LLLLLL.LLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLLLL
+        ///LLLLLLLLLLLLLLLLLLLL.LLLLLLLL.LLLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLL.LLLLLLLL
+        ///LLLLLLLLLLLLLLL.LLLL.LLLLLLLL.LLLLL.LLLLLLLLLLLLLLL.LLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLL.LLLLLLLL
+        ///LLLLLLLLLL.LLLLLL.LL.LLLLLLLL.LLLLL.LLLLLLLLLLLLLLL.LLLLLL.LLLLLLLL.LLLLLLLLLLLLLLL.LLLL.LLLLLLLL
+        ///LLLLLLLLLLLLLLLLL [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day11Seating {
+            get {
+                return ResourceManager.GetString("Day11Seating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1782
         ///1344
         ///1974
