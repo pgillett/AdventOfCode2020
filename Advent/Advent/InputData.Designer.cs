@@ -809,5 +809,15 @@ namespace Advent {
                 return ResourceManager.GetString("Day12Rain", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1000509
+        ///17,x,x,x,x,x,x,x,x,x,x,37,x,x,x,x,x,739,x,29,x,x,x,x,x,x,x,x,x,x,13,x,x,x,x,x,x,x,x,x,23,x,x,x,x,x,x,x,971,x,x,x,x,x,x,x,x,x,41,x,x,x,x,x,x,x,x,19.
+        /// </summary>
+        internal static string Day13Shuttle {
+            get {
+                return ResourceManager.GetString("Day13Shuttle", resourceCulture);
+            }
+        }
     }
 }

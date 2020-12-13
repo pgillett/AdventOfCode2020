@@ -113,6 +113,15 @@ namespace Advent
                 var distanceWayPoint = day12.ManhattanWaypoint(InputData.Day12Rain);
                 Console.WriteLine($"Distance waypoint: {distanceWayPoint}");
             }
+
+            {
+                var day13 = new Day13();
+                WriteDay(13);
+                var earliestDepart = day13.FindEarliest(InputData.Day13Shuttle);
+                Console.WriteLine($"Earliest depart: {earliestDepart}");
+                var sequentialDepart = day13.FindSequential(InputData.Day13Shuttle);
+                Console.WriteLine($"Sequential depart: {sequentialDepart}");
+            }
         }
 
         static void WriteDay(int day)
