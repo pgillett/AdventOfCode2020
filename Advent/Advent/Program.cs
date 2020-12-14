@@ -122,6 +122,15 @@ namespace Advent
                 var sequentialDepart = day13.FindSequential(InputData.Day13Shuttle);
                 Console.WriteLine($"Sequential depart: {sequentialDepart}");
             }
+
+            {
+                var day14 = new Day14();
+                WriteDay(14);
+                var sumOfMemory = day14.SumOfMemory(InputData.Day14Docking);
+                Console.WriteLine($"Sum of memory: {sumOfMemory}");
+                var sumOfFloatingMemory = day14.SumOfFloatingMemory(InputData.Day14Docking);
+                Console.WriteLine($"Sum of floating: {sumOfFloatingMemory}");
+            }
         }
 
         static void WriteDay(int day)

@@ -819,5 +819,34 @@ namespace Advent {
                 return ResourceManager.GetString("Day13Shuttle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to mask = 0101XX01X00X1X1011X1X000000101X10001
+        ///mem[7625] = 333450
+        ///mem[24015] = 49860
+        ///mem[42377] = 14966
+        ///mem[17961] = 3341
+        ///mem[37065] = 2066541
+        ///mask = 111101XX101X1110110101X01X101X100X0X
+        ///mem[17330] = 176272
+        ///mem[20250] = 11696927
+        ///mem[28122] = 103
+        ///mem[23322] = 1224
+        ///mem[20521] = 306265426
+        ///mem[56993] = 5315703
+        ///mask = 0101110101111X0010100000X10X000X1X1X
+        ///mem[52304] = 107295284
+        ///mem[48546] = 12756871
+        ///mem[26246] = 794803013
+        ///mem[32041] = 796
+        ///mem[20164] = 6770841
+        ///mem[48951] = 2607
+        ///mask = 110101110110 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day14Docking {
+            get {
+                return ResourceManager.GetString("Day14Docking", resourceCulture);
+            }
+        }
     }
 }
