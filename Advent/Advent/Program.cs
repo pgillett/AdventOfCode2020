@@ -135,7 +135,7 @@ namespace Advent
             {
                 var day15 = new Day15();
                 WriteDay(15);
-                var number2020 = day15.Find(202000, InputData.Day15NumberGame);
+                var number2020 = day15.Find(2020, InputData.Day15NumberGame);
                 Console.WriteLine($"2020th number: {number2020}");
                 var number30million = day15.Find(30000000, InputData.Day15NumberGame);
                 Console.WriteLine($"30m th number: {number30million}");
