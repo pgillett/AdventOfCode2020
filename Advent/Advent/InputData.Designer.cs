@@ -848,5 +848,14 @@ namespace Advent {
                 return ResourceManager.GetString("Day14Docking", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8,0,17,4,1,12.
+        /// </summary>
+        internal static string Day15NumberGame {
+            get {
+                return ResourceManager.GetString("Day15NumberGame", resourceCulture);
+            }
+        }
     }
 }
