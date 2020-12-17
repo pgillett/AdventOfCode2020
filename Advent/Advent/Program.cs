@@ -149,6 +149,15 @@ namespace Advent
                 var departureProduct = day16.DepartureProduct(InputData.Day16Ticket);
                 Console.WriteLine($"Departure product: {departureProduct}");
             }
+
+            {
+                var day17 = new Day17();
+                WriteDay(17);
+                var active3 = day17.Active(3, InputData.Day17Cubes);
+                Console.WriteLine($"Active in 3d: {active3}");
+                var active4 = day17.Active(4, InputData.Day17Cubes);
+                Console.WriteLine($"Active in 4d: {active4}");
+            }
         }
 
         static void WriteDay(int day)

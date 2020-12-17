@@ -881,5 +881,21 @@ namespace Advent {
                 return ResourceManager.GetString("Day16Ticket", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ...#..#.
+        ///#..#...#
+        ///.....###
+        ///##....##
+        ///......##
+        ///........
+        ///.#......
+        ///##...#...
+        /// </summary>
+        internal static string Day17Cubes {
+            get {
+                return ResourceManager.GetString("Day17Cubes", resourceCulture);
+            }
+        }
     }
 }
