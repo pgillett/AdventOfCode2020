@@ -140,6 +140,15 @@ namespace Advent
                 var number30million = day15.Find(30000000, InputData.Day15NumberGame);
                 Console.WriteLine($"30m th number: {number30million}");
             }
+
+            {
+                var day16 = new Day16();
+                WriteDay(16);
+                var errorRate = day16.InvalidErrorRate(InputData.Day16Ticket);
+                Console.WriteLine($"Error rate: {errorRate}");
+                var departureProduct = day16.DepartureProduct(InputData.Day16Ticket);
+                Console.WriteLine($"Departure product: {departureProduct}");
+            }
         }
 
         static void WriteDay(int day)

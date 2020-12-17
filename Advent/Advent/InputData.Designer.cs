@@ -857,5 +857,29 @@ namespace Advent {
                 return ResourceManager.GetString("Day15NumberGame", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to departure location: 42-322 or 347-954
+        ///departure station: 49-533 or 555-966
+        ///departure platform: 28-86 or 101-974
+        ///departure track: 50-150 or 156-950
+        ///departure date: 30-117 or 129-957
+        ///departure time: 31-660 or 678-951
+        ///arrival location: 26-482 or 504-959
+        ///arrival station: 29-207 or 220-971
+        ///arrival platform: 28-805 or 829-964
+        ///arrival track: 48-377 or 401-964
+        ///class: 28-138 or 145-959
+        ///duration: 33-182 or 205-966
+        ///price: 25-437 or 449-962
+        ///route: 41-403 or 428-968
+        ///row: 33-867 or 880-960
+        ///seat: 40-921 or  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day16Ticket {
+            get {
+                return ResourceManager.GetString("Day16Ticket", resourceCulture);
+            }
+        }
     }
 }
