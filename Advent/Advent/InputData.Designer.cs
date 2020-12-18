@@ -897,5 +897,23 @@ namespace Advent {
                 return ResourceManager.GetString("Day17Cubes", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6 * 8 * (2 * 9) + 2 * 8 * 4
+        ///(2 + 2 * 4 * (8 * 9 * 2 + 6) * 4) * 2
+        ///2 * (7 + 3 * 5 * 7 * 6) + 9 * 4
+        ///((8 * 4 * 7 + 9 + 8) * (6 * 4) + 7 * 9 * 8 + 3) * (9 + 6 + 8 + 2 + (6 * 4 * 6) * (9 + 7 * 6 * 5 + 5 * 3)) * 8 * 8
+        ///3 + 8 * (4 * 8 * (9 + 3 + 9 * 5 + 6 * 7)) * 6 + 6 * (4 + 6 * 9 + 9 * (4 * 8) + 2)
+        ///7 * 8 * 3 + (8 + 9 + 3 * 3 * 4 * 5) * 5
+        ///(2 * 2 + 2 * 8 + 7 * 5) + 2 + 5 + 2
+        ///2 + ((3 * 7 + 8 * 9) * 6 * 5 + (6 * 3 * 3 + 6 + 6 + 4) * (7 * 3 + 7 * 7 * 9)) * (2 * 2) + 6
+        ///9 * 5 + 5 + 9 + 3
+        ///(9 * 3 * (9 + 4 * 4 + 6 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day18Order {
+            get {
+                return ResourceManager.GetString("Day18Order", resourceCulture);
+            }
+        }
     }
 }

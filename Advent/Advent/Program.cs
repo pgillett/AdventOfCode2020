@@ -158,6 +158,15 @@ namespace Advent
                 var active4 = day17.Active(4, InputData.Day17Cubes);
                 Console.WriteLine($"Active in 4d: {active4}");
             }
+
+            {
+                var day18 = new Day18();
+                WriteDay(18);
+                var sumOfEquations1 = day18.SumOfWithNoPrecedence(InputData.Day18Order);//day18.Active(3, InputData.Day17Cubes);
+                Console.WriteLine($"Active in 3d: {sumOfEquations1}");
+                var sumOfEquations2 = day18.SumOfAddTakesPrecedence(InputData.Day18Order);//day18.Active(4, InputData.Day17Cubes);
+                Console.WriteLine($"Active in 4d: {sumOfEquations2}");
+            }
         }
 
         static void WriteDay(int day)
