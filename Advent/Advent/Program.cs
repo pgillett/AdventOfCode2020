@@ -52,7 +52,7 @@ namespace Advent
             }
 
             {
-                var day6=new Day06();
+                var day6 = new Day06();
                 WriteDay(6);
                 var countQuestions = day6.CountGroupQuestions(InputData.Day06Customs);
                 Console.WriteLine($"Number of questions: {countQuestions}");
@@ -106,7 +106,7 @@ namespace Advent
             }
 
             {
-                var day12= new Day12();
+                var day12 = new Day12();
                 WriteDay(12);
                 var distance = day12.Manhattan(InputData.Day12Rain);
                 Console.WriteLine($"Distance: {distance}");
@@ -162,10 +162,19 @@ namespace Advent
             {
                 var day18 = new Day18();
                 WriteDay(18);
-                var sumOfEquations1 = day18.SumOfWithNoPrecedence(InputData.Day18Order);//day18.Active(3, InputData.Day17Cubes);
+                var sumOfEquations1 = day18.SumOfWithNoPrecedence(InputData.Day18Order);
                 Console.WriteLine($"Active in 3d: {sumOfEquations1}");
-                var sumOfEquations2 = day18.SumOfAddTakesPrecedence(InputData.Day18Order);//day18.Active(4, InputData.Day17Cubes);
+                var sumOfEquations2 = day18.SumOfAddTakesPrecedence(InputData.Day18Order);
                 Console.WriteLine($"Active in 4d: {sumOfEquations2}");
+            }
+
+            {
+                var day19 = new Day19();
+                WriteDay(19);
+                var validMessages = day19.ValidMessages(InputData.Day19Messages);
+                Console.WriteLine($"Valid messages: {validMessages}");
+                var validMessagesWithSwitch = day19.ValidMessagesWithSwitch(InputData.Day19Messages);
+                Console.WriteLine($"Valid messages with switch: {validMessagesWithSwitch}");
             }
         }
 
