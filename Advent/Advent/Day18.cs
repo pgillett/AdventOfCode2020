@@ -55,7 +55,7 @@ namespace Advent
                             {
                                 var part = data.Skip(b + 1).Take(e - b - 1).ToArray();
 
-                                data = Replace(data, b, e + 1,
+                                data = Replace(data, b, e,
                                     new Part(SplitBrackets(part, precedence)));
 
                                 break;
@@ -82,7 +82,7 @@ namespace Advent
         private Part[] Replace(Part[] data, int from, int to, Part with)
         {
             var dataLeft = data.Take(from).ToArray();
-            var dataRight = data.Skip(to).ToArray();
+            var dataRight = data.Skip(to + 1).ToArray();
 
             return dataLeft.Append(with).Concat(dataRight).ToArray();
         }
@@ -96,7 +96,7 @@ namespace Advent
 
                 var valueSum = data[b - 1].Value + data[b + 1].Value;
 
-                data = Replace(data, b - 1, b + 2, new Part(valueSum));
+                data = Replace(data, b - 1, b + 1, new Part(valueSum));
             }
 
             var answer = data[0].Value;
