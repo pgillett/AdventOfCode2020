@@ -176,6 +176,16 @@ namespace Advent
                 var validMessagesWithSwitch = day19.ValidMessagesWithSwitch(InputData.Day19Messages);
                 Console.WriteLine($"Valid messages with switch: {validMessagesWithSwitch}");
             }
+
+
+            {
+                var day20 = new Day20();
+                WriteDay(20);
+                var validMessages = day20.CornerMultiply(InputData.Day20Jigsaw);
+                Console.WriteLine($"Valid messages: {validMessages}");
+                var validMessagesWithSwitch = day20.SeaMonsters(InputData.Day20Jigsaw);
+                Console.WriteLine($"Valid messages with switch: {validMessagesWithSwitch}");
+            }
         }
 
         static void WriteDay(int day)
