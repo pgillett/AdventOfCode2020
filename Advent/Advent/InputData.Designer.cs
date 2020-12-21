@@ -1006,5 +1006,15 @@ namespace Advent {
                 return ResourceManager.GetString("Day20Jigsaw", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to qtncs hjlcgk rrvp rgc tzvlm vxkmcmj dxk gpgf fnbqnt fnqxjl cppzn ctnkv czvhncg krjn mft dknlb gnsxbz gljdv htskk kkzqp mpm jckpd xbmj xvph bvh cjbvz tdtzd tdbcfb qrvft mxkh rhcj jcbcxtj hkxqsc dfbnq sxksnzf ckqnfq hbmv xnzqrm ndssl hkzrs rgdz nhhsgd hchdc zgng nsvfk lbgntt gjck grsx ndgfp nptr mmpgm mqxhh csmfzp sp gptcng gdtq bpbdlmg rtnjfqm ssfvs cpvn bgsdh dfxmxd jjgvd hrbdk (contains dairy)
+        ///xppdk rgc kntss qkdgt jpvfc sjvrgx tkqng smzhj jdmhd zhj xbmj bvh zgng jvshst rhcj rjt cvcr qgqnjx xbdsf ckqnfq c [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day21Allergen {
+            get {
+                return ResourceManager.GetString("Day21Allergen", resourceCulture);
+            }
+        }
     }
 }

@@ -178,4 +178,7 @@
   <data name="Day20Jigsaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>datafiles\day20jigsaw.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="Day21Allergen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day21allergen.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

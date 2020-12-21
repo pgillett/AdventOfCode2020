@@ -181,10 +181,19 @@ namespace Advent
             {
                 var day20 = new Day20();
                 WriteDay(20);
-                var validMessages = day20.CornerMultiply(InputData.Day20Jigsaw);
-                Console.WriteLine($"Valid messages: {validMessages}");
-                var validMessagesWithSwitch = day20.SeaMonsters(InputData.Day20Jigsaw);
-                Console.WriteLine($"Valid messages with switch: {validMessagesWithSwitch}");
+                var cornerMultiply = day20.CornerMultiply(InputData.Day20Jigsaw);
+                Console.WriteLine($"Corners multiplied: {cornerMultiply}");
+                var roughness = day20.SeaMonsters(InputData.Day20Jigsaw);
+                Console.WriteLine($"Roughness: {roughness}");
+            }
+
+            {
+                var day21 = new Day21();
+                WriteDay(21);
+                var countNonAllergens = day21.CountNonAllergens(InputData.Day21Allergen);
+                Console.WriteLine($"Non allergens: {countNonAllergens}");
+                var dangerous = day21.Dangerous(InputData.Day21Allergen);
+                Console.WriteLine($"Dangerous: {dangerous}");
             }
         }
 
