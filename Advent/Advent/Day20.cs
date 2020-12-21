@@ -72,11 +72,11 @@ namespace Advent
             }
 
             private void CheckAndAddToQueue(OrientedPiece piece, int x, int y,
-                Func<OrientedPiece, Piece, Orientation, bool> action)
+                Func<OrientedPiece, OrientedPiece, bool> check)
             {
                 if (!Layout.ContainsKey((x, y)))
                 {
-                    var next = FindPiece(piece, action);
+                    var next = FindPiece(piece, check);
                     if (next != null)
                     {
                         Layout[(x, y)] = next;
@@ -85,26 +85,26 @@ namespace Advent
                 }
             }
 
-            private OrientedPiece FindPiece(OrientedPiece main, Func<OrientedPiece, Piece, Orientation, bool> action) =>
+            private OrientedPiece FindPiece(OrientedPiece main, Func<OrientedPiece, OrientedPiece, bool> check) =>
                 _pieces.Where(p => p != main.Piece)
-                    .Select(p => new OrientedPiece(p, FindOrient(main, p, action)))
+                    .Select(p => new OrientedPiece(p, FindOrient(main, p, check)))
                     .SingleOrDefault(p => p.Orientation != null);
 
             private Orientation FindOrient(OrientedPiece main, Piece beside,
-                Func<OrientedPiece, Piece, Orientation, bool> action)
-                => Orientation.SetOf.FirstOrDefault(orient => action(main, beside, orient));
+                Func<OrientedPiece, OrientedPiece, bool> check)
+                => Orientation.SetOf.FirstOrDefault(orient => check(main, new OrientedPiece(beside, orient)));
 
-            private bool CheckAbove(OrientedPiece main, Piece above, Orientation orientationAbove) =>
-                Range.All(p => main.At(p, 0) == above.At(p, PieceSize - 1, orientationAbove));
+            private bool CheckAbove(OrientedPiece main, OrientedPiece above) =>
+                Range.All(p => main.At(p, 0) == above.At(p, PieceSize - 1));
 
-            private bool CheckBelow(OrientedPiece main, Piece below, Orientation orientationBelow) =>
-                Range.All(p => main.At(p, PieceSize - 1) == below.At(p, 0, orientationBelow));
+            private bool CheckBelow(OrientedPiece main, OrientedPiece below) =>
+                Range.All(p => main.At(p, PieceSize - 1) == below.At(p, 0));
 
-            private bool CheckLeft(OrientedPiece main, Piece left, Orientation orientationLeft) =>
-                Range.All(p => main.At(0, p) == left.At(PieceSize - 1, p, orientationLeft));
+            private bool CheckLeft(OrientedPiece main, OrientedPiece left) =>
+                Range.All(p => main.At(0, p) == left.At(PieceSize - 1, p));
 
-            private bool CheckRight(OrientedPiece main, Piece right, Orientation orientationRight) =>
-                Range.All(p => main.At(PieceSize - 1, p) == right.At(0, p, orientationRight));
+            private bool CheckRight(OrientedPiece main, OrientedPiece right) =>
+                Range.All(p => main.At(PieceSize - 1, p) == right.At(0, p));
 
             private IEnumerable<int> Range => Enumerable.Range(0, PieceSize);
 
