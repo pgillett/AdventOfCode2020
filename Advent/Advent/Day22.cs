@@ -46,7 +46,7 @@ namespace Advent
 
             while (cards1.Count != 0 && cards2.Count != 0)
             {
-                if (decks.HasPlayed(1, cards1) || decks.HasPlayed(2, cards2)) return (1, cards1);
+                if (decks.HasPlayed(cards1, cards2)) return (1, cards1);
 
                 var c1 = cards1.Dequeue();
                 var c2 = cards2.Dequeue();
@@ -78,27 +78,25 @@ namespace Advent
         
         private class Decks
         {
-            private readonly List<(int, int[])> _decks = new List<(int, int[])>();
+            private readonly HashSet<(int, int)> _decks = new HashSet<(int, int)>();
 
-            public bool HasPlayed(int player, IEnumerable<int> deck)
+            public bool HasPlayed(IEnumerable<int> player1, IEnumerable<int> player2)
             {
-                var set = deck.ToArray();
-                foreach (var played in _decks.Where(d => d.Item1 == player
-                                                         && d.Item2.Length == set.Length))
-                {
-                    for (int i = 0; i <= set.Length; i++)
-                    {
-                        if (i == set.Length)
-                            return true;
-                        if (set[i] != played.Item2[i])
-                            break;
-                    }
-                }
-
-                _decks.Add((player, set));
+                var h1 = Hash(player1);
+                var h2 = Hash(player2);
+                if (_decks.Contains((h1, h2)))
+                    return true;
+                _decks.Add((h1, h2));
                 return false;
             }
 
+            private int Hash(IEnumerable<int> set)
+            {
+                var hash = new HashCode();
+                foreach (var item in set)
+                    hash.Add(item);
+                return hash.ToHashCode();
+            }
         }
     }
 }
