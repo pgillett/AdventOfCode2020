@@ -204,6 +204,15 @@ namespace Advent
                 var recursiveWinningScore = day22.RecursiveWinningScore(InputData.Day22Crab);
                 Console.WriteLine($"Recursive winning score: {recursiveWinningScore}");
             }
+
+            {
+                var day23 = new Day23();
+                WriteDay(1);
+                var textFrom1 = day23.TextFrom1(InputData.Day23Cups, 100);
+                Console.WriteLine($"Cups from 1: {textFrom1}");
+                var rightMultiply = day23.RightMultiply(InputData.Day23Cups, 10000000);
+                Console.WriteLine($"Multiply right 2: {rightMultiply}");
+            }
         }
 
         static void WriteDay(int day)

@@ -1077,5 +1077,14 @@ namespace Advent {
                 return ResourceManager.GetString("Day22Crab", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 598162734.
+        /// </summary>
+        internal static string Day23Cups {
+            get {
+                return ResourceManager.GetString("Day23Cups", resourceCulture);
+            }
+        }
     }
 }
