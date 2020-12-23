@@ -207,7 +207,7 @@ namespace Advent
 
             {
                 var day23 = new Day23();
-                WriteDay(1);
+                WriteDay(23);
                 var textFrom1 = day23.TextFrom1(InputData.Day23Cups, 100);
                 Console.WriteLine($"Cups from 1: {textFrom1}");
                 var rightMultiply = day23.RightMultiply(InputData.Day23Cups, 10000000);
