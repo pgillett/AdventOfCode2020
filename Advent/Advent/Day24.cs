@@ -62,16 +62,16 @@ namespace Advent
             var minY = tiles.Min(p => p.Item2) - 1;
             var maxY = tiles.Max(p => p.Item2) + 1;
 
-            if (minY % 2 != minX % 2) minX--;
+            if (Math.Abs(minX) % 2 == 1) minX++;
 
             for (var y = minY; y <= maxY; y++)
             {
-                for (var x = minX - (y % 2); x <= maxX; x++)
+                for (var x = minX - (y % 2); x <= maxX; x += 2)
                 {
                     var count = _directions.Values
-                        .Count(direction => 
+                        .Count(direction =>
                             tiles.Contains((x + direction.Item1, y + direction.Item2)));
-                    
+
                     if (count == 2 || (tiles.Contains((x, y)) && count == 1))
                         newTiles.Add((x, y));
                 }
