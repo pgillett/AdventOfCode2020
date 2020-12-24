@@ -213,6 +213,15 @@ namespace Advent
                 var rightMultiply = day23.RightMultiply(InputData.Day23Cups, 10000000);
                 Console.WriteLine($"Multiply right 2: {rightMultiply}");
             }
+
+            {
+                var day24 = new Day24();
+                WriteDay(24);
+                var black = day24.CountBlack(InputData.Day24Hex);
+                Console.WriteLine($"Black tiles: {black}");
+                var black100Days = day24.CountBlack100Days(InputData.Day24Hex);
+                Console.WriteLine($"Black after 100 days: {black100Days}");
+            }
         }
 
         static void WriteDay(int day)

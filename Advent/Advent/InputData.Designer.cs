@@ -1086,5 +1086,28 @@ namespace Advent {
                 return ResourceManager.GetString("Day23Cups", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to nwneswnwnwsenwnwnwnwnwnwnwnwnwnenwnwnwnw
+        ///seseswswseseswsesenwnwseseswsese
+        ///swneeweneeneneeneeeeeneeeene
+        ///eswswnwswswwnwswswswswewswswswswswsw
+        ///wwseneseeneseswwwseneseseneswseswese
+        ///seseseswseseseseswnwswswneseseswsesesese
+        ///nwnewwwwwswnwnwww
+        ///neesenwwswseswswswnwsenwsesewseeeswse
+        ///sweeneesweeswnweewseeneeneneswnw
+        ///swseswseswswseseswseneswseswswsesesesese
+        ///swneneneenenenenenenenenenenenwne
+        ///swswswswswswswswswswswesenwseswswswse
+        ///neeeenweneeneswene
+        ///swwnenwsewwwswswwswwswweewwswwnw
+        ///enewwnenwnenenenwnewnenenw [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day24Hex {
+            get {
+                return ResourceManager.GetString("Day24Hex", resourceCulture);
+            }
+        }
     }
 }
