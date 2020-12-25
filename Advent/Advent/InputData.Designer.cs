@@ -1109,5 +1109,15 @@ namespace Advent {
                 return ResourceManager.GetString("Day24Hex", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8421034
+        ///15993936.
+        /// </summary>
+        internal static string Day25Keys {
+            get {
+                return ResourceManager.GetString("Day25Keys", resourceCulture);
+            }
+        }
     }
 }

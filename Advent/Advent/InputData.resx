@@ -190,4 +190,7 @@
   <data name="Day24Hex" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>datafiles\day24hex.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="Day25Keys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>datafiles\day25keys.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

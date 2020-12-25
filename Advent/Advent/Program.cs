@@ -222,6 +222,14 @@ namespace Advent
                 var black100Days = day24.CountBlack100Days(InputData.Day24Hex);
                 Console.WriteLine($"Black after 100 days: {black100Days}");
             }
+
+            {
+                var day25 = new Day25();
+                WriteDay(25);
+                var encryptionKey = day25.EncryptionKey(InputData.Day25Keys);
+                Console.WriteLine($"Encryption key: {encryptionKey}");
+            }
+
         }
 
         static void WriteDay(int day)
